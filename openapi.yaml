@@ -1,40 +1,41 @@
 openapi: 3.0.4
 info:
   title: Baby Name Generator
-  description: Baby Name Generator is a simple tool for generating baby names. It returns a list of baby names.
+  description: >-
+    Baby Name Generator is a simple tool for generating baby names. It returns a
+    list of baby names.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/babynamegenerator:
     get:
       summary: Generate Baby Names
-      description: Baby Name Generator is a simple tool for generating baby names. It returns a list of baby names.
+      description: Generate a baby's first and middle name, based on the provided gender
       operationId: babynamegenerator
       parameters:
-      - name: gender
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The gender you would like the generated names to be based off (e.g. male, female)
-        example: male
-      - name: count
-        default: '1'
-        in: query
-        schema:
-          type: integer
-        required: false
-        description: The number of names to generate
-        example: '1'
+        - name: gender
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The gender for the generated names
+          example: male
+        - name: count
+          in: query
+          schema:
+            type: integer
+          required: false
+          description: The number of names to generate
+          example: 1
       responses:
         '200':
           description: Successful Response
@@ -50,29 +51,23 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
-                  count: 3
+                  count: 1
                   names:
-                  - firstName: Gladys
-                    middleName: Emily
-                    fullName: Gladys Emily
-                  - firstName: Sandra
-                    middleName: Tasha
-                    fullName: Sandra Tasha
-                  - firstName: Patricia
-                    middleName: Rosemary
-                    fullName: Patricia Rosemary
+                    - firstName: Myra
+                      middleName: Sherri
+                      fullName: Myra Sherri
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -80,4 +75,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
