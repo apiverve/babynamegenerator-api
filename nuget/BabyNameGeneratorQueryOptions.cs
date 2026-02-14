@@ -11,15 +11,13 @@ namespace APIVerve.API.BabyNameGenerator
     public class BabyNameGeneratorQueryOptions
     {
         /// <summary>
-        /// The gender you would like the generated names to be based off (e.g. male, female)
-        /// Example: male
+        /// The gender for the generated names
         /// </summary>
         [JsonProperty("gender")]
         public string Gender { get; set; }
 
         /// <summary>
         /// The number of names to generate
-        /// Example: 1
         /// </summary>
         [JsonProperty("count")]
         public string Count { get; set; }
