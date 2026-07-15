@@ -61,7 +61,8 @@ Using the API is simple. All you have to do is make a request. The API will retu
 ```javascript
 var query = {
   gender: "male",
-  count: 1
+  count: 1,
+  includeAvatar: false
 };
 
 api.execute(query, function (error, data) {
@@ -82,7 +83,8 @@ You can also use promises to make requests. The API returns a promise that you c
 ```javascript
 var query = {
   gender: "male",
-  count: 1
+  count: 1,
+  includeAvatar: false
 };
 
 api.execute(query)
@@ -104,7 +106,8 @@ You can also use async/await to make requests. The API returns a promise that yo
 async function makeRequest() {
     var query = {
   gender: "male",
-  count: 1
+  count: 1,
+  includeAvatar: false
 };
 
     try {
@@ -125,22 +128,13 @@ async function makeRequest() {
   "status": "ok",
   "error": null,
   "data": {
-    "count": 3,
+    "count": 1,
     "names": [
       {
-        "firstName": "Gladys",
-        "middleName": "Emily",
-        "fullName": "Gladys Emily"
-      },
-      {
-        "firstName": "Sandra",
-        "middleName": "Tasha",
-        "fullName": "Sandra Tasha"
-      },
-      {
-        "firstName": "Patricia",
-        "middleName": "Rosemary",
-        "fullName": "Patricia Rosemary"
+        "firstName": "Myra",
+        "middleName": "Sherri",
+        "fullName": "Myra Sherri",
+        "avatar": "https://storage.googleapis.com/apiverve/APIResources/faces/Female/Child/11223344.jpg?X-Goog-Signature=..."
       }
     ]
   }
