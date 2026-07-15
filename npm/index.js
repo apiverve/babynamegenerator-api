@@ -30,7 +30,7 @@ class babynamegeneratorWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/babynamegenerator';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"gender":{"type":"string","required":true},"count":{"type":"integer","required":false,"min":1,"max":100,"default":1}};
+        this.validationRules = {"gender":{"type":"string","required":true},"count":{"type":"integer","required":false,"min":1,"max":100,"default":1},"includeAvatar":{"type":"boolean","required":false,"default":false}};
     }
 
     /**
