@@ -36,6 +36,13 @@ paths:
           required: false
           description: The number of names to generate
           example: 1
+        - name: includeAvatar
+          in: query
+          schema:
+            type: boolean
+          required: false
+          description: Include an AI-generated child face avatar matching gender
+          example: true
       responses:
         '200':
           description: Successful Response
@@ -62,6 +69,8 @@ paths:
                     - firstName: Myra
                       middleName: Sherri
                       fullName: Myra Sherri
+                      avatar: >-
+                        https://storage.googleapis.com/apiverve/APIResources/faces/Female/Child/11223344.jpg?X-Goog-Signature=...
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
