@@ -16,7 +16,8 @@ const api = new babynamegeneratorAPI({
 // Example query
 var query = {
   gender: "male",
-  count: 1
+  count: 1,
+  includeAvatar: false
 };
 
 // Make the API request using callback
