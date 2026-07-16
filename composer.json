@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/babynamegenerator",
+    "description": "Baby Name Generator is a simple tool for generating baby names. It returns a list of baby names.",
+    "version": "1.2.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "babynamegenerator",
+        "baby name generator",
+        "baby names",
+        "baby name generator api",
+        "baby names api",
+        "baby name generator tool"
+    ],
+    "homepage": "https://apiverve.com/marketplace/babynamegenerator?utm_source=php&utm_medium=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/babynamegenerator",
+        "source": "https://github.com/apiverve/babynamegenerator-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Babynamegenerator\\": "php/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Babynamegenerator\\Tests\\": "php/tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
