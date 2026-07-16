@@ -20,6 +20,12 @@ namespace APIVerve.API.BabyNameGenerator
         /// The number of names to generate
         /// </summary>
         [JsonProperty("count")]
-        public string Count { get; set; }
+        public int? Count { get; set; }
+
+        /// <summary>
+        /// Include an AI-generated child face avatar matching gender
+        /// </summary>
+        [JsonProperty("includeAvatar")]
+        public bool? IncludeAvatar { get; set; }
     }
 }
