@@ -1,6 +1,6 @@
 import re
-from typing import Dict, Optional, Any
-from dataclasses import dataclass, List
+from typing import Dict, Optional, Any, List
+from dataclasses import dataclass
 import requests
 
 
@@ -25,7 +25,8 @@ class BabynamegeneratorAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
         "gender": {"type": "string", "required": True},
-        "count": {"type": "integer", "required": False, "min": 1, "max": 100, "default": 1}
+        "count": {"type": "integer", "required": False, "min": 1, "max": 100, "default": 1},
+        "includeAvatar": {"type": "boolean", "required": False, "default": False}
     }
 
     # Format validation patterns
