@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Baby Name Generator
   description: >-
-    Baby Name Generator is a simple tool for generating baby names. It returns a
-    list of baby names.
+    Baby Name Generator suggests first and middle name combinations for boys and
+    girls based on a selected gender. Paid plans can request multiple names at
+    once and include child avatar images.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/babynamegenerator:
     get:
-      summary: Generate Baby Names
+      summary: Baby Name Generator
       description: Generate a baby's first and middle name, based on the provided gender
       operationId: babynamegenerator
       parameters:
@@ -69,8 +70,7 @@ paths:
                     - firstName: Myra
                       middleName: Sherri
                       fullName: Myra Sherri
-                      avatar: >-
-                        https://storage.googleapis.com/apiverve/APIResources/faces/Female/Child/11223344.jpg?X-Goog-Signature=...
+                      avatar: https://storage.googleapis.com/apiverve/APIResources/faces/Female/Child/11223344.jpg?X-Goog-Signature=...
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
