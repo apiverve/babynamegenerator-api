@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/babynamegenerator",
-  "version": "1.2.0",
-  "description": "Baby Name Generator is a simple tool for generating baby names. It returns a list of baby names.",
+  "version": "1.2.2",
+  "description": "Baby Name Generator suggests first and middle name combinations for boys and girls based on a selected gender. Paid plans can request multiple names at once and include child avatar images.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "baby name generator", "baby names", "baby name generator api", "baby names api", "baby name generator tool"
+    "baby name generator api", "baby names by gender", "boy and girl names", "generate baby names", "first and middle name generator"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/babynamegenerator-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/babynamegenerator?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/babynamegenerator?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
