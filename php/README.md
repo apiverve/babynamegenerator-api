@@ -1,6 +1,6 @@
 # Baby Name Generator API - PHP Package
 
-Baby Name Generator is a simple tool for generating baby names. It returns a list of baby names.
+Baby Name Generator suggests first and middle name combinations for boys and girls based on a selected gender. Paid plans can request multiple names at once and include child avatar images.
 
 ## Installation
 
@@ -93,11 +93,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/babynamegenerator?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/babynamegenerator?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/babynamegenerator?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/babynamegenerator?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/babynamegenerator?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/babynamegenerator?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
