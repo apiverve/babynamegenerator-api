@@ -46,11 +46,12 @@ final _formatPatterns = {
 
 /// Baby Name Generator API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/babynamegenerator?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/babynamegenerator?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [gender] (required) - The gender for the generated names
 /// * [count] - The number of names to generate [min: 1, max: 100]
+/// * [includeAvatar] - Include an AI-generated child face avatar matching gender
 class BabynamegeneratorClient {
   final String apiKey;
   final String baseUrl;
@@ -60,6 +61,7 @@ class BabynamegeneratorClient {
   static final Map<String, ValidationRule> _validationRules = <String, ValidationRule>{
     'gender': ValidationRule(type: 'string', required: true),
     'count': ValidationRule(type: 'integer', required: false, min: 1, max: 100),
+    'includeAvatar': ValidationRule(type: 'boolean', required: false),
   };
 
   BabynamegeneratorClient(this.apiKey, {

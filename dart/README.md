@@ -1,11 +1,11 @@
 # Baby Name Generator API - Dart/Flutter Client
 
-Baby Name Generator is a simple tool for generating baby names. It returns a list of baby names.
+Baby Name Generator suggests first and middle name combinations for boys and girls based on a selected gender. Paid plans can request multiple names at once and include child avatar images.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_babynamegenerator.svg)](https://pub.dev/packages/apiverve_babynamegenerator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Baby Name Generator API](https://apiverve.com/marketplace/babynamegenerator?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Baby Name Generator API](https://apiverve.com/marketplace/babynamegenerator?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_babynamegenerator: ^1.1.14
+  apiverve_babynamegenerator: ^1.2.3
 ```
 
 Then run:
@@ -35,7 +35,8 @@ void main() async {
   try {
     final response = await client.execute({
       'gender': 'male',
-      'count': 1
+      'count': 1,
+      'includeAvatar': true
     });
 
     print('Status: ${response.status}');
@@ -53,22 +54,13 @@ void main() async {
   "status": "ok",
   "error": null,
   "data": {
-    "count": 3,
+    "count": 1,
     "names": [
       {
-        "firstName": "Gladys",
-        "middleName": "Emily",
-        "fullName": "Gladys Emily"
-      },
-      {
-        "firstName": "Sandra",
-        "middleName": "Tasha",
-        "fullName": "Sandra Tasha"
-      },
-      {
-        "firstName": "Patricia",
-        "middleName": "Rosemary",
-        "fullName": "Patricia Rosemary"
+        "firstName": "Myra",
+        "middleName": "Sherri",
+        "fullName": "Myra Sherri",
+        "avatar": "https://storage.googleapis.com/apiverve/APIResources/faces/Female/Child/11223344.jpg?X-Goog-Signature=..."
       }
     ]
   }
@@ -77,12 +69,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [Baby Name Generator API](https://apiverve.com/marketplace/babynamegenerator?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/babynamegenerator](https://docs.apiverve.com/ref/babynamegenerator?utm_source=dart&utm_medium=readme)
+- **API Home:** [Baby Name Generator API](https://apiverve.com/marketplace/babynamegenerator?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/babynamegenerator](https://docs.apiverve.com/ref/babynamegenerator?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -90,4 +82,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)

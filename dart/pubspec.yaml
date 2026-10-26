@@ -1,7 +1,7 @@
 name: apiverve_babynamegenerator
-description: Baby Name Generator is a simple tool for generating baby names. It returns a list of baby names.
-version: 1.1.14
-homepage: https://apiverve.com/marketplace/babynamegenerator?utm_source=dart&utm_medium=homepage
+description: "Baby Name Generator suggests first and middle name combinations for boys and girls based on a selected gender. Paid plans can request multiple names at once and include child avatar images."
+version: 1.2.3
+homepage: https://apiverve.com/marketplace/babynamegenerator?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/babynamegenerator-api/tree/main/dart
 
 environment:
