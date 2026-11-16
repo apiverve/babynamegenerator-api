@@ -4,6 +4,6 @@ require_relative "apiverve_babynamegenerator/client"
 
 module APIVerve
   module Babynamegenerator
-    VERSION = "1.2.5"
+    VERSION = "1.2.6"
   end
 end
