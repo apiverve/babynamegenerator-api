@@ -1,4 +1,4 @@
-## 1.2.5
+## 1.2.6
 
 - Initial release
 - Full API support for Baby Name Generator API
